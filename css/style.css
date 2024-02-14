@@ -381,8 +381,8 @@ img {
 .reviews-title {
 }
 .reviews-list {
-	gap: 28px;
-	align-items: start;
+    gap: 28px;
+    align-items: start;
 }
 .reviews-item {
     width: 360px;
@@ -390,19 +390,20 @@ img {
     border-radius: 15px;
     width: 360px;
     min-height: 200px;
-	padding: 56px 24px 24px;
+    padding: 56px 24px 24px;
     box-shadow: 0 10px 100px 0 rgba(17, 17, 17, 0.1);
     background: var(--white);
 
-		position: relative;
+    position: relative;
+    margin-bottom: 50px;
 }
 .rewies-img {
-	position: absolute;
+    position: absolute;
     width: 80px;
     height: 80px;
-		top: -42px;
-		left: 50%;
-		transform: translateX(-50%);
+    top: -42px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .reviews-item-caption {
     font-family: var(--font-family);
