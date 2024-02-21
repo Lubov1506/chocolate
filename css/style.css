@@ -14,6 +14,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 /* #region Common */
 body {
   font-family: "Montserrat", sans-serif;
@@ -72,6 +73,7 @@ img {
   border-radius: 100px;
   color: var(--white);
 }
+
 .row {
   display: flex;
   flex-direction: row;
@@ -90,7 +92,6 @@ img {
     outline-offset: -2px; */
 }
 .sextion {
-  /* margin-bottom: 120px; */
   padding: 60px 0;
 }
 
@@ -123,8 +124,6 @@ img {
 .header-logo-accent {
   font-style: italic;
 }
-.header-nav {
-}
 .header-nav-list {
   gap: 24px;
 }
@@ -146,7 +145,6 @@ img {
 .soc-links-item {
   border: 1px solid var(--header-icon-border);
   border-radius: 10px;
-
   transition: border-color 0.2s linear;
 }
 .header .soc-links-link {
@@ -164,6 +162,10 @@ img {
 }
 .header .soc-links-item:hover {
   border-color: var(--beige);
+}
+a:hover,
+a:focus {
+  color: var(--orange);
 }
 
 /* #endregion header */
@@ -211,21 +213,29 @@ img {
 .btn-orange {
   transition: color 0.2s linear, background-color 0.2s linear;
 }
+.btn-orange:hover,
+.btn-orange:focus {
+  background-color: var(--beige);
+  color: var(--orange);
+}
 .hero .btn-white {
   border: 1px solid var(--white);
   background-color: transparent;
   color: var(--white);
   transition: color 0.2s linear, border-color 0.2s linear;
 }
+.btn-white:hover,
+.btn-white:focus {
+  border-color: var(--orange);
+  color: var(--orange);
+}
 .hero-scroll-link {
   gap: 14px;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 129%;
   letter-spacing: -0.03em;
   color: var(--white);
-
   transition: color 0.2s linear;
 }
 .scroll-svg-wrap {
@@ -420,11 +430,10 @@ img {
   border-radius: 15px;
   width: calc((100% - 18px * 3) / 4);
   align-items: center;
-
-  transition: transform 0.3s linear, box-shadow 0.2s linear;
+  transition: transform 0.4s linear, box-shadow 0.4s linear;
 }
 .products-item:hover {
-  transform: scale(105%);
+  transform: scale(1.03);
   box-shadow: 0 10px 100px 0 rgba(17, 17, 17, 0.3);
 }
 .products-img {
@@ -455,7 +464,10 @@ img {
 
   transition: color 0.2s linear, background-color 0.2s linear;
 }
-
+.btn-products:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
 /* #endregion products */
 
 /* #region bestsellers */
@@ -490,7 +502,7 @@ img {
   align-items: start;
 
   transform: translateY(100%);
-  transition: transform 0.3s linear;
+  transition: transform 0.4s linear;
 }
 .bestsellers-item:hover .bestsellers-overlay {
   transform: translateY(0%);
@@ -531,7 +543,7 @@ img {
   transition: box-shadow 0.2s linear;
 }
 .reviews-item:hover {
-  box-shadow: 0 10px 100px 0 rgba(17, 17, 17, 0.4);
+  box-shadow: 0 10px 100px 0 rgba(17, 17, 17, 0.3);
 }
 .rewies-img {
   position: absolute;
@@ -567,6 +579,10 @@ img {
   margin: 0 auto;
 
   transition: color 0.2s linear, background-color 0.2s linear;
+}
+.reviews-button:hover {
+  background-color: var(--orange);
+  color: var(--white);
 }
 /* #endregion reviews */
 
@@ -638,6 +654,9 @@ img {
   color: var(--white);
   transition: color 0.2s linear;
 }
+.footer-bottom {
+  justify-content: space-between;
+}
 .footer-menu-list {
   gap: 24px;
 }
@@ -653,9 +672,46 @@ img {
   padding: 18px 0;
   transition: color 0.2s linear;
 }
+
+.footer-form {
+  max-width: 458px;
+  width: 100%;
+  height: 52px;
+}
+.footer-input {
+  max-width: 313px;
+  flex-grow: 1;
+  height: 100%;
+  background-color: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  padding: 13px 24px;
+  margin-right: 8px;
+  color: var(--white);
+  outline: transparent;
+  transition: border-color 0.3s linear;
+}
+.footer-input:focus{
+  border-color: var(--white);
+}
+.footer-submit-btn {
+  min-width: 130;
+  max-width: 137px;
+  height: 100%;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--white);
+  padding: 17px 32px;
+  transition: background-color 0.3s linear, color 0.3s linear;
+}
+.footer-submit-btn:hover {
+  background-color: var(--beige);
+  color: var(--orange);
+}
 /* #endregion footer */
 
-/* #region Form */
+/* #region Modal form */
 
 .backdrop {
   position: fixed;
@@ -669,7 +725,7 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
-.backdrop.is-open{
+.backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
@@ -693,6 +749,11 @@ img {
   outline: transparent;
   transition: border-color 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.modal-textarea {
+  resize: none;
+  padding-left: 24px;
+  height: 137px;
+}
 .modal {
   position: absolute;
   padding: 40px;
@@ -712,12 +773,13 @@ img {
   position: absolute;
   top: 24px;
   right: 24px;
+  
 }
 .modal-btn-icon {
   stroke: var(--black);
-  transition: stroke 400ms cubic-bezier(0.075, 0.82, 0.165, 1), 
+  transition: stroke 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.modal-close-btn:hover .modal-btn-icon{
+.modal-close-btn:hover .modal-btn-icon {
   stroke: var(--orange);
 }
 .modal-caption {
@@ -747,11 +809,7 @@ img {
   fill: none;
   stroke: var(--modal-icon);
 }
-.modal-textarea {
-  resize: none;
-  padding-left: 24px;
-  height: 137px;
-}
+
 .modal-form-input:focus,
 .modal-textarea:focus {
   border-color: var(--orange);
@@ -774,7 +832,8 @@ img {
   justify-content: center;
   align-items: center;
   margin-right: 12px;
-  transition: background-color 400ms cubic-bezier(0.075, 0.82, 0.165, 1), border 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: background-color 400ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    border 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .icon-checkbox {
   fill: transparent;
@@ -785,46 +844,29 @@ img {
   text-decoration-skip-ink: none;
   color: var(--orange);
 }
-.modal-input-checkbox:checked +.modal-privacy-label > .custom-checkbox{
+.modal-input-checkbox:checked + .modal-privacy-label > .custom-checkbox {
   background-color: var(--orange);
   border: none;
 }
-.modal-input-checkbox:checked +.modal-privacy-label > .custom-checkbox > .icon-checkbox{
+.modal-input-checkbox:checked
+  + .modal-privacy-label
+  > .custom-checkbox
+  > .icon-checkbox {
   fill: var(--white);
 }
-.privacy-field{
+.privacy-field {
   margin-bottom: 40px;
 }
-.modal-btn{
+.modal-btn {
   width: 117px;
-  transition: background-color 400ms cubic-bezier(0.075, 0.82, 0.165, 1), border 400ms cubic-bezier(0.075, 0.82, 0.165, 1), color 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: background-color 400ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    border 400ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    color 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.modal-btn:hover, .modal-btn:focus{
+.modal-btn:hover,
+.modal-btn:focus {
   border-color: var(--orange);
   color: var(--black);
   background-color: var(--white);
 }
-/* #endregion Form */
-
-/* #region hovers */
-a:hover {
-  color: var(--orange);
-}
-.reviews-button:hover {
-  background-color: var(--orange);
-  color: var(--white);
-}
-.btn-white:hover, .btn-white:focus {
-  border-color: var(--orange);
-  color: var(--orange);
-}
-.btn-orange:hover, .btn-orange:focus  {
-  background-color: var(--beige);
-  color: var(--orange);
-}
-.btn-products:hover {
-  background-color: var(--orange);
-  color: var(--white);
-}
-
-/* #endregion hovers */
+/* #endregion Modal form */
