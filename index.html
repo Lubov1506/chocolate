@@ -10,6 +10,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,14 +38,14 @@
               <a href="./index.html" class="header-nav-link">Home</a>
             </li>
             <li class="header-nav-item">
-              <a href="" class="header-nav-link">How it’s made?</a>
+              <a href="#made" class="header-nav-link">How it’s made?</a>
             </li>
             <li class="header-nav-item">
-              <a href="" class="header-nav-link">Chocolate is loved</a>
+              <a href="#reviews" class="header-nav-link">Chocolate is loved</a>
             </li>
           </ul>
         </nav>
-        <ul class=" soc-links-list row">
+        <ul class="soc-links-list row">
           <li class="soc-links-item row">
             <a href="" class="soc-links-link row">
               <svg class="soc-svg-icon" width="24" height="24">
@@ -274,7 +275,7 @@
       <!-- #endregion Ingridients\ -->
 
       <!-- #region Made-->
-      <section class="made sextion">
+      <section class="made sextion" id="made">
         <div class="container">
           <h2 class="made-title">
             How it’s <span class="orange-text">made</span>?
@@ -336,7 +337,11 @@
             Our <span class="orange-text">products</span>
           </h2>
           <ul class="products-list row">
-            <li class="products-item col">
+            <li
+              class="products-item col"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               <img
                 src="./images/sect4-products/prod1.jpg"
                 alt="Orange "
@@ -346,7 +351,11 @@
               <p class="products-text">Dark chocolate</p>
               <button type="button" class="btn btn-products">45 UAH</button>
             </li>
-            <li class="products-item col">
+            <li
+              class="products-item col"
+              data-aos="fade-right"
+              data-aos-delay="400"
+            >
               <img
                 src="./images/sect4-products/prod2.jpg"
                 alt="Apple&Cranberry"
@@ -356,7 +365,11 @@
               <p class="products-text">Milk chocolate</p>
               <button type="button" class="btn btn-products">50 UAH</button>
             </li>
-            <li class="products-item col">
+            <li
+              class="products-item col"
+              data-aos="fade-right"
+              data-aos-delay="600"
+            >
               <img
                 src="./images/sect4-products/prod3.jpg"
                 alt="Lime&Sea salt"
@@ -366,7 +379,11 @@
               <p class="products-text">Dark chocolate</p>
               <button type="button" class="btn btn-products">66 UAH</button>
             </li>
-            <li class="products-item col">
+            <li
+              class="products-item col"
+              data-aos="fade-right"
+              data-aos-delay="800"
+            >
               <img
                 src="./images/sect4-products/prod4.jpg"
                 alt="Pineapple"
@@ -376,7 +393,11 @@
               <p class="products-text">Dark chocolate</p>
               <button type="button" class="btn btn-products">54 UAH</button>
             </li>
-            <li class="products-item col">
+            <li
+              class="products-item col"
+              data-aos="fade-right"
+              data-aos-delay="1000"
+            >
               <img
                 src="./images/sect4-products/prod5.jpg"
                 alt="Classic"
@@ -386,7 +407,11 @@
               <p class="products-text">Milk chocolate</p>
               <button type="button" class="btn btn-products">45 UAH</button>
             </li>
-            <li class="products-item col">
+            <li
+              class="products-item col"
+              data-aos="fade-right"
+              data-aos-delay="1200"
+            >
               <img
                 src="./images/sect4-products/prod6.jpg"
                 alt="Honey"
@@ -396,7 +421,11 @@
               <p class="products-text">Milk chocolate</p>
               <button type="button" class="btn btn-products">50 UAH</button>
             </li>
-            <li class="products-item col">
+            <li
+              class="products-item col"
+              data-aos="fade-right"
+              data-aos-delay="1400"
+            >
               <img
                 src="./images/sect4-products/prod7.jpg"
                 alt="Roasted fruits"
@@ -406,7 +435,11 @@
               <p class="products-text">Milk chocolate</p>
               <button type="button" class="btn btn-products">66 UAH</button>
             </li>
-            <li class="products-item col">
+            <li
+              class="products-item col"
+              data-aos="fade-right"
+              data-aos-delay="1600"
+            >
               <img
                 src="./images/sect4-products/prod8.jpg"
                 alt="Classic"
@@ -436,7 +469,10 @@
                   alt="CHOCOLATE WITH NUTS"
                 />
                 <p class="bestsellers-overlay">
-                  Chocolate with fruit is an unbeatable combination of two of the tastiest things in the world. This dessert combines delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry of taste.
+                  Chocolate with fruit is an unbeatable combination of two of
+                  the tastiest things in the world. This dessert combines
+                  delicate and aromatic chocolate with fresh and juicy fruits,
+                  creating a true poetry of taste.
                 </p>
               </div>
               <div class="bestsellers-wrapper">
@@ -469,7 +505,11 @@
                   alt="DARK CHOCOLATE"
                 />
                 <p class="bestsellers-overlay">
-                  Dark chocolate is a rich and indulgent treat that is beloved by many chocolate enthusiasts. It is made from cocoa beans, which are roasted, ground, and then processed to produce chocolate liquor. Dark chocolate contains a higher percentage of cocoa solids compared to milk chocolate.
+                  Dark chocolate is a rich and indulgent treat that is beloved
+                  by many chocolate enthusiasts. It is made from cocoa beans,
+                  which are roasted, ground, and then processed to produce
+                  chocolate liquor. Dark chocolate contains a higher percentage
+                  of cocoa solids compared to milk chocolate.
                 </p>
               </div>
               <div class="bestsellers-wrapper">
@@ -482,7 +522,7 @@
       <!-- #endregion Bestsellers-->
 
       <!-- #region Reviews-->
-      <section class="reviews sextion">
+      <section class="reviews sextion" id="reviews">
         <div class="container col">
           <h2 class="reviews-title">
             <span class="orange-text">Chocolate</span> is loved
@@ -549,30 +589,26 @@
               <h3 class="social-networks-caption">Social networks</h3>
               <ul class="soc-links-list row">
                 <li class="soc-links-item tut">
-                  <a href="" class="footer-soc-link row"
-                    >
+                  <a href="" class="footer-soc-link row">
                     <svg class="footer-soc-icon" width="24" height="24">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
-                    </a>
+                  </a>
                 </li>
                 <li class="soc-links-item">
-                  <a href="" class="footer-soc-link row"
-                  >
-                  <svg class="footer-soc-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
+                  <a href="" class="footer-soc-link row">
+                    <svg class="footer-soc-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
                   </a>
-              </li>
                 </li>
+
                 <li class="soc-links-item">
-                  <a href="" class="footer-soc-link row"
-                  >
-                  <svg class="footer-soc-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
+                  <a href="" class="footer-soc-link row">
+                    <svg class="footer-soc-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
                   </a>
-              </li>
                 </li>
               </ul>
             </article>
@@ -607,5 +643,82 @@
       </div>
     </footer>
     <!-- #endregion Footer-->
+
+    <!-- #region Form -->
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button type="button" class="modal-close-btn" aria-label="Modal close button">
+          <svg class="modal-btn-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-x-close"></use>
+          </svg>
+        </button>
+        <p class="modal-caption">
+          LEAVE A REVIEW ABOUT <span class="orange-text"> OUR CHOCOLATE</span>
+        </p>
+        <form class="modal-form" name="review_form" autocomplete="off">
+
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user_name">Name</label>
+            <div class="modal-form-box">
+              <input class="modal-form-input" type="text" name="user_name" id="user_name" autofocus />
+              <svg class="modal-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user_email">Email</label>
+            <div class="modal-form-box">
+              <input class="modal-form-input" type="email" name="user_email" id="user_email"  />
+              <svg class="modal-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user_phone">Phone number</label>
+            <div class="modal-form-box">
+              <input class="modal-form-input" type="tel" name="user_phone" id="user_phone" />
+              <svg class="modal-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-comment">Comment</label>
+            <textarea class="modal-textarea" name="user-comment" id="user-comment" placeholder="Enter text"></textarea>
+          </div>
+
+          <div class="modal-form-field privacy-field">
+            <input type="checkbox" id="user-checkbox" class="modal-input-checkbox visually-hidden" name="user-checkbox">
+
+            <label class="modal-privacy-label" for="user-checkbox">
+              <span class="custom-checkbox">
+                <svg class="icon-checkbox" width="10" height="10">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the <a class="blue-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button type="submit" class="btn modal-btn">Send</button>
+
+        </form>
+      </div>
+    </div>
+    <!-- #endregion Form -->
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        once: true,
+      });
+    </script>
   </body>
 </html>
